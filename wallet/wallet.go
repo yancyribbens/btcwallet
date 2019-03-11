@@ -120,7 +120,7 @@ type Wallet struct {
 	quitMu  sync.Mutex
 }
 
-// Start starts the goroutines necessary to manage a wallet.
+// Start the goroutines necessary to manage a wallet.
 func (w *Wallet) Start() {
 	w.quitMu.Lock()
 	select {
